@@ -12,10 +12,13 @@ class AyatSeeder extends Seeder
      *
      * @return void
      */
+
+
+    
     public function run()
     {
         //alfatihah
-        $alfatihah = json_decode(file_get_contents('Al Fatihah.json'), true);
+        $alfatihah = json_decode(file_get_contents('public/alquran/surah/1.json'), true);
         foreach ($alfatihah as $alfatihah) {
             Ayat::create([
                 'surah_id' => '1',
@@ -28,7 +31,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Baqarah
-        $alBaqarah = json_decode(file_get_contents('Al Baqarah.json'), true);
+        $alBaqarah = json_decode(file_get_contents('public/alquran/surah/2.json'), true);
         foreach ($alBaqarah as $alBaqarah) {
             Ayat::create([
                 'surah_id' => '2',
@@ -42,7 +45,7 @@ class AyatSeeder extends Seeder
 
 
         // Ali Imran
-        $aliImran = json_decode(file_get_contents('Ali Imran.json'), true);
+        $aliImran = json_decode(file_get_contents('public/alquran/surah/3.json'), true);
         foreach ($aliImran as $aliImran) {
             Ayat::create([
                 'surah_id' => '3',
@@ -55,7 +58,7 @@ class AyatSeeder extends Seeder
 
 
         // An Nisaa
-        $anNisaa = json_decode(file_get_contents('An Nisaa.json'), true);
+        $anNisaa = json_decode(file_get_contents('public/alquran/surah/4.json'), true);
         foreach ($anNisaa as $anNisaa) {
             Ayat::create([
                 'surah_id' => '4',
@@ -67,7 +70,7 @@ class AyatSeeder extends Seeder
         }
 
         // Al Maidah
-        $alMaidah = json_decode(file_get_contents('Al Maidah.json'), true);
+        $alMaidah = json_decode(file_get_contents('public/alquran/surah/5.json'), true);
         foreach ($alMaidah as $alMaidah) {
             Ayat::create([
                 'surah_id' => '5',
@@ -79,7 +82,7 @@ class AyatSeeder extends Seeder
         }
 
         // Al An'am
-        $alAnam = json_decode(file_get_contents('Al Anam.json'), true);
+        $alAnam = json_decode(file_get_contents('public/alquran/surah/6.json'), true);
         foreach ($alAnam as $alAnam) {
             Ayat::create([
                 'surah_id' => '6',
@@ -92,7 +95,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Araf
-        $alAraf = json_decode(file_get_contents('Al Araf.json'), true);
+        $alAraf = json_decode(file_get_contents('public/alquran/surah/7.json'), true);
         foreach ($alAraf as $alAraf) {
             Ayat::create([
                 'surah_id' => '7',
@@ -105,7 +108,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Anfaal
-        $alAnfaal = json_decode(file_get_contents('Al Anfaal.json'), true);
+        $alAnfaal = json_decode(file_get_contents('public/alquran/surah/8.json'), true);
         foreach ($alAnfaal as $alAnfaal) {
             Ayat::create([
                 'surah_id' => '8',
@@ -118,7 +121,7 @@ class AyatSeeder extends Seeder
 
 
         // At Taubah
-        $atTaubah = json_decode(file_get_contents('At Taubah.json'), true);
+        $atTaubah = json_decode(file_get_contents('public/alquran/surah/9.json'), true);
         foreach ($atTaubah as $atTaubah) {
             Ayat::create([
                 'surah_id' => '9',
@@ -131,7 +134,7 @@ class AyatSeeder extends Seeder
 
 
         // Yunus
-        $yunus = json_decode(file_get_contents('Yunus.json'), true);
+        $yunus = json_decode(file_get_contents('public/alquran/surah/10.json'), true);
         foreach ($yunus as $yunus) {
             Ayat::create([
                 'surah_id' => '10',
@@ -144,7 +147,7 @@ class AyatSeeder extends Seeder
 
 
         // Huud
-        $huud = json_decode(file_get_contents('Huud.json'), true);
+        $huud = json_decode(file_get_contents('public/alquran/surah/11.json'), true);
         foreach ($huud as $huud) {
             Ayat::create([
                 'surah_id' => '11',
@@ -157,7 +160,7 @@ class AyatSeeder extends Seeder
 
 
         // Yusuf
-        $yusuf = json_decode(file_get_contents('Yusuf.json'), true);
+        $yusuf = json_decode(file_get_contents('public/alquran/surah/12.json'), true);
         foreach ($yusuf as $yusuf) {
             Ayat::create([
                 'surah_id' => '12',
@@ -170,7 +173,7 @@ class AyatSeeder extends Seeder
 
 
         // Ar Radu
-        $arRadu = json_decode(file_get_contents('Ar Radu.json'), true);
+        $arRadu = json_decode(file_get_contents('public/alquran/surah/13.json'), true);
         foreach ($arRadu as $arRadu) {
             Ayat::create([
                 'surah_id' => '13',
@@ -183,7 +186,7 @@ class AyatSeeder extends Seeder
 
 
         // Ibrahim
-        $ibrahim = json_decode(file_get_contents('Ibrahim.json'), true);
+        $ibrahim = json_decode(file_get_contents('public/alquran/surah/14.json'), true);
         foreach ($ibrahim as $ibrahim) {
             Ayat::create([
                 'surah_id' => '14',
@@ -198,7 +201,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Hijr
-        $alHijr = json_decode(file_get_contents('Al Hijr.json'), true);
+        $alHijr = json_decode(file_get_contents('public/alquran/surah/15.json'), true);
         foreach ($alHijr as $alHijr) {
             Ayat::create([
                 'surah_id' => '15',
@@ -213,7 +216,7 @@ class AyatSeeder extends Seeder
 
 
         // An Nahl
-        $anNahl = json_decode(file_get_contents('An Nahl.json'), true);
+        $anNahl = json_decode(file_get_contents('public/alquran/surah/16.json'), true);
         foreach ($anNahl as $anNahl) {
             Ayat::create([
                 'surah_id' => '16',
@@ -228,7 +231,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Israa
-        $alIsraa = json_decode(file_get_contents('Al Israa.json'), true);
+        $alIsraa = json_decode(file_get_contents('public/alquran/surah/17.json'), true);
         foreach ($alIsraa as $alIsraa) {
             Ayat::create([
                 'surah_id' => '17',
@@ -243,7 +246,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Kahfi
-        $alKahfi = json_decode(file_get_contents('Al Kahfi.json'), true);
+        $alKahfi = json_decode(file_get_contents('public/alquran/surah/18.json'), true);
         foreach ($alKahfi as $alKahfi) {
             Ayat::create([
                 'surah_id' => '18',
@@ -258,7 +261,7 @@ class AyatSeeder extends Seeder
 
 
         // Maryam
-        $maryam = json_decode(file_get_contents('Maryam.json'), true);
+        $maryam = json_decode(file_get_contents('public/alquran/surah/19.json'), true);
         foreach ($maryam as $maryam) {
             Ayat::create([
                 'surah_id' => '19',
@@ -274,7 +277,7 @@ class AyatSeeder extends Seeder
 
 
         // Thaahaa
-        $thaahaa = json_decode(file_get_contents('Thaahaa.json'), true);
+        $thaahaa = json_decode(file_get_contents('public/alquran/surah/20.json'), true);
         foreach ($thaahaa as $thaahaa) {
             Ayat::create([
                 'surah_id' => '20',
@@ -289,7 +292,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Anbiyaa
-        $alAnbiyaa = json_decode(file_get_contents('Al Anbiyaa.json'), true);
+        $alAnbiyaa = json_decode(file_get_contents('public/alquran/surah/21.json'), true);
         foreach ($alAnbiyaa as $alAnbiyaa) {
             Ayat::create([
                 'surah_id' => '21',
@@ -304,7 +307,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Hajj
-        $alHajj = json_decode(file_get_contents('Al Hajj.json'), true);
+        $alHajj = json_decode(file_get_contents('public/alquran/surah/22.json'), true);
         foreach ($alHajj as $alHajj) {
             Ayat::create([
                 'surah_id' => '22',
@@ -319,7 +322,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Muminun
-        $alMuminun = json_decode(file_get_contents('Al Muminun.json'), true);
+        $alMuminun = json_decode(file_get_contents('public/alquran/surah/23.json'), true);
         foreach ($alMuminun as $alMuminun) {
             Ayat::create([
                 'surah_id' => '23',
@@ -334,7 +337,7 @@ class AyatSeeder extends Seeder
 
 
         // An Nuur
-        $anNuur = json_decode(file_get_contents('An Nuur.json'), true);
+        $anNuur = json_decode(file_get_contents('public/alquran/surah/24.json'), true);
         foreach ($anNuur as $anNuur) {
             Ayat::create([
                 'surah_id' => '24',
@@ -350,7 +353,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Furqaan
-        $alFurqaan = json_decode(file_get_contents('Al Furqaan.json'), true);
+        $alFurqaan = json_decode(file_get_contents('public/alquran/surah/25.json'), true);
         foreach ($alFurqaan as $alFurqaan) {
             Ayat::create([
                 'surah_id' => '25',
@@ -365,7 +368,7 @@ class AyatSeeder extends Seeder
 
 
         // Asy Syuara
-        $asySyuara = json_decode(file_get_contents('Asy Syuara.json'), true);
+        $asySyuara = json_decode(file_get_contents('public/alquran/surah/26.json'), true);
         foreach ($asySyuara as $asySyuara) {
             Ayat::create([
                 'surah_id' => '26',
@@ -380,7 +383,7 @@ class AyatSeeder extends Seeder
 
 
         // An Naml
-        $anNaml = json_decode(file_get_contents('An Naml.json'), true);
+        $anNaml = json_decode(file_get_contents('public/alquran/surah/27.json'), true);
         foreach ($anNaml as $anNaml) {
             Ayat::create([
                 'surah_id' => '27',
@@ -396,7 +399,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Qashash
-        $alQashash = json_decode(file_get_contents('Al Qashash.json'), true);
+        $alQashash = json_decode(file_get_contents('public/alquran/surah/28.json'), true);
         foreach ($alQashash as $alQashash) {
             Ayat::create([
                 'surah_id' => '28',
@@ -411,7 +414,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ankabut
-        $alAnkabut = json_decode(file_get_contents('Al Ankabut.json'), true);
+        $alAnkabut = json_decode(file_get_contents('public/alquran/surah/29.json'), true);
         foreach ($alAnkabut as $alAnkabut) {
             Ayat::create([
                 'surah_id' => '29',
@@ -425,7 +428,7 @@ class AyatSeeder extends Seeder
 
 
         // Ar Ruum
-        $arRuum = json_decode(file_get_contents('Ar Ruum.json'), true);
+        $arRuum = json_decode(file_get_contents('public/alquran/surah/30.json'), true);
         foreach ($arRuum as $arRuum) {
             Ayat::create([
                 'surah_id' => '30',
@@ -441,7 +444,7 @@ class AyatSeeder extends Seeder
 
 
         // Luqman
-        $Luqman = json_decode(file_get_contents('Luqman.json'), true);
+        $Luqman = json_decode(file_get_contents('public/alquran/surah/31.json'), true);
         foreach ($Luqman as $Luqman) {
             Ayat::create([
                 'surah_id' => '31',
@@ -457,7 +460,7 @@ class AyatSeeder extends Seeder
 
 
         // As Sajdah
-        $asSajdah = json_decode(file_get_contents('As Sajdah.json'), true);
+        $asSajdah = json_decode(file_get_contents('public/alquran/surah/32.json'), true);
         foreach ($asSajdah as $asSajdah) {
             Ayat::create([
                 'surah_id' => '32',
@@ -473,7 +476,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ahzab
-        $alAhzab = json_decode(file_get_contents('Al Ahzab.json'), true);
+        $alAhzab = json_decode(file_get_contents('public/alquran/surah/33.json'), true);
         foreach ($alAhzab as $alAhzab) {
             Ayat::create([
                 'surah_id' => '33',
@@ -488,7 +491,7 @@ class AyatSeeder extends Seeder
 
 
         // Saba
-        $saba = json_decode(file_get_contents('Saba.json'), true);
+        $saba = json_decode(file_get_contents('public/alquran/surah/34.json'), true);
         foreach ($saba as $saba) {
             Ayat::create([
                 'surah_id' => '34',
@@ -501,7 +504,7 @@ class AyatSeeder extends Seeder
 
 
         // Faathir
-        $faathir = json_decode(file_get_contents('Faathir.json'), true);
+        $faathir = json_decode(file_get_contents('public/alquran/surah/35.json'), true);
         foreach ($faathir as $faathir) {
             Ayat::create([
                 'surah_id' => '35',
@@ -514,7 +517,7 @@ class AyatSeeder extends Seeder
 
 
         // YaSin
-        $yaSin = json_decode(file_get_contents('YaSin.json'), true);
+        $yaSin = json_decode(file_get_contents('public/alquran/surah/36.json'), true);
         foreach ($yaSin as $yaSin) {
             Ayat::create([
                 'surah_id' => '36',
@@ -528,7 +531,7 @@ class AyatSeeder extends Seeder
 
 
         //  Ash Shaaffat
-        $ashShaaffat = json_decode(file_get_contents('Ash Shaaffat.json'), true);
+        $ashShaaffat = json_decode(file_get_contents('public/alquran/surah/37.json'), true);
         foreach ($ashShaaffat as $ashShaaffat) {
             Ayat::create([
                 'surah_id' => '37',
@@ -542,7 +545,7 @@ class AyatSeeder extends Seeder
 
 
         // Shaad
-        $shaad = json_decode(file_get_contents('Shaad.json'), true);
+        $shaad = json_decode(file_get_contents('public/alquran/surah/38.json'), true);
         foreach ($shaad as $shaad) {
             Ayat::create([
                 'surah_id' => '38',
@@ -558,7 +561,7 @@ class AyatSeeder extends Seeder
 
 
         // Az Zumar
-        $azZumar = json_decode(file_get_contents('Az Zumar.json'), true);
+        $azZumar = json_decode(file_get_contents('public/alquran/surah/39.json'), true);
         foreach ($azZumar as $azZumar) {
             Ayat::create([
                 'surah_id' => '39',
@@ -574,7 +577,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ghaafir
-        $alGhaafir = json_decode(file_get_contents('Al Ghaafir.json'), true);
+        $alGhaafir = json_decode(file_get_contents('public/alquran/surah/40.json'), true);
         foreach ($alGhaafir as $alGhaafir) {
             Ayat::create([
                 'surah_id' => '40',
@@ -589,7 +592,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Fushilat
-        $alFushilat = json_decode(file_get_contents('Al Fushilat.json'), true);
+        $alFushilat = json_decode(file_get_contents('public/alquran/surah/41.json'), true);
         foreach ($alFushilat as $alFushilat) {
             Ayat::create([
                 'surah_id' => '41',
@@ -605,7 +608,7 @@ class AyatSeeder extends Seeder
 
 
         // Asy Syuura
-        $asySyuura = json_decode(file_get_contents('Asy Syuura.json'), true);
+        $asySyuura = json_decode(file_get_contents('public/alquran/surah/42.json'), true);
         foreach ($asySyuura as $asySyuura) {
             Ayat::create([
                 'surah_id' => '42',
@@ -621,7 +624,7 @@ class AyatSeeder extends Seeder
 
 
         // Az Zukhruf
-        $azZukhruf = json_decode(file_get_contents('Az Zukhruf.json'), true);
+        $azZukhruf = json_decode(file_get_contents('public/alquran/surah/43.json'), true);
         foreach ($azZukhruf as $azZukhruf) {
             Ayat::create([
                 'surah_id' => '43',
@@ -637,7 +640,7 @@ class AyatSeeder extends Seeder
 
 
         // Ad Dukhaan
-        $adDukhaan = json_decode(file_get_contents('Ad Dukhaan.json'), true);
+        $adDukhaan = json_decode(file_get_contents('public/alquran/surah/44.json'), true);
         foreach ($adDukhaan as $adDukhaan) {
             Ayat::create([
                 'surah_id' => '44',
@@ -653,7 +656,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Jaatsiyah
-        $alJaatsiyah = json_decode(file_get_contents('Al Jaatsiyah.json'), true);
+        $alJaatsiyah = json_decode(file_get_contents('public/alquran/surah/45.json'), true);
         foreach ($alJaatsiyah as $alJaatsiyah) {
             Ayat::create([
                 'surah_id' => '45',
@@ -670,7 +673,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ahqaaf
-        $alAhqaaf = json_decode(file_get_contents('Al Ahqaaf.json'), true);
+        $alAhqaaf = json_decode(file_get_contents('public/alquran/surah/46.json'), true);
         foreach ($alAhqaaf as $alAhqaaf) {
             Ayat::create([
                 'surah_id' => '46',
@@ -685,7 +688,7 @@ class AyatSeeder extends Seeder
 
 
         // Muhammad
-        $muhammad = json_decode(file_get_contents('Muhammad.json'), true);
+        $muhammad = json_decode(file_get_contents('public/alquran/surah/47.json'), true);
         foreach ($muhammad as $muhammad) {
             Ayat::create([
                 'surah_id' => '47',
@@ -700,7 +703,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Fath
-        $alFath = json_decode(file_get_contents('Al Fath.json'), true);
+        $alFath = json_decode(file_get_contents('public/alquran/surah/48.json'), true);
         foreach ($alFath as $alFath) {
             Ayat::create([
                 'surah_id' => '48',
@@ -714,7 +717,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Hujuraat
-        $alHujuraat = json_decode(file_get_contents('Al Hujuraat.json'), true);
+        $alHujuraat = json_decode(file_get_contents('public/alquran/surah/49.json'), true);
         foreach ($alHujuraat as $alHujuraat) {
             Ayat::create([
                 'surah_id' => '49',
@@ -726,7 +729,7 @@ class AyatSeeder extends Seeder
         }
 
         // Qaaf
-        $qaaf = json_decode(file_get_contents('Qaaf.json'), true);
+        $qaaf = json_decode(file_get_contents('public/alquran/surah/50.json'), true);
         foreach ($qaaf as $qaaf) {
             Ayat::create([
                 'surah_id' => '50',
@@ -740,7 +743,7 @@ class AyatSeeder extends Seeder
 
 
         // Adz Dzaariyaat
-        $adzDzaariyaat = json_decode(file_get_contents('Adz Dzaariyaat.json'), true);
+        $adzDzaariyaat = json_decode(file_get_contents('public/alquran/surah/51.json'), true);
         foreach ($adzDzaariyaat as $adzDzaariyaat) {
             Ayat::create([
                 'surah_id' => '51',
@@ -753,7 +756,7 @@ class AyatSeeder extends Seeder
 
 
         // Ath Thuur
-        $athThuur = json_decode(file_get_contents('Ath Thuur.json'), true);
+        $athThuur = json_decode(file_get_contents('public/alquran/surah/52.json'), true);
         foreach ($athThuur as $athThuur) {
             Ayat::create([
                 'surah_id' => '52',
@@ -767,7 +770,7 @@ class AyatSeeder extends Seeder
 
 
         // An Najm
-        $anNajm = json_decode(file_get_contents('An Najm.json'), true);
+        $anNajm = json_decode(file_get_contents('public/alquran/surah/53.json'), true);
         foreach ($anNajm as $anNajm) {
             Ayat::create([
                 'surah_id' => '53',
@@ -782,7 +785,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Qamar
-        $alQamar = json_decode(file_get_contents('Al Qamar.json'), true);
+        $alQamar = json_decode(file_get_contents('public/alquran/surah/54.json'), true);
         foreach ($alQamar as $alQamar) {
             Ayat::create([
                 'surah_id' => '54',
@@ -796,7 +799,7 @@ class AyatSeeder extends Seeder
 
 
         // Ar Rahmaan
-        $arRahmaan = json_decode(file_get_contents('Ar Rahmaan.json'), true);
+        $arRahmaan = json_decode(file_get_contents('public/alquran/surah/55.json'), true);
         foreach ($arRahmaan as $arRahmaan) {
             Ayat::create([
                 'surah_id' => '55',
@@ -810,7 +813,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Waaqi'ah
-        $alWaaqiah = json_decode(file_get_contents('Al Waaqiah.json'), true);
+        $alWaaqiah = json_decode(file_get_contents('public/alquran/surah/56.json'), true);
         foreach ($alWaaqiah as $alWaaqiah) {
             Ayat::create([
                 'surah_id' => '56',
@@ -825,7 +828,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Hadiid
-        $alHadiid = json_decode(file_get_contents('Al Hadiid.json'), true);
+        $alHadiid = json_decode(file_get_contents('public/alquran/surah/57.json'), true);
         foreach ($alHadiid as $alHadiid) {
             Ayat::create([
                 'surah_id' => '57',
@@ -839,7 +842,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Mujaadalah
-        $alMujaadalah = json_decode(file_get_contents('Al Mujaadalah.json'), true);
+        $alMujaadalah = json_decode(file_get_contents('public/alquran/surah/58.json'), true);
         foreach ($alMujaadalah as $alMujaadalah) {
             Ayat::create([
                 'surah_id' => '58',
@@ -851,7 +854,7 @@ class AyatSeeder extends Seeder
         }
 
         //Al Hasyr
-        $alHasyr = json_decode(file_get_contents('Al Hasyr.json'), true);
+        $alHasyr = json_decode(file_get_contents('public/alquran/surah/59.json'), true);
         foreach ($alHasyr as $alHasyr) {
             Ayat::create([
                 'surah_id' => '59',
@@ -863,7 +866,7 @@ class AyatSeeder extends Seeder
         }
 
         // Al mumtahanah
-        $almumtahanah = json_decode(file_get_contents('Al mumtahanah.json'), true);
+        $almumtahanah = json_decode(file_get_contents('public/alquran/surah/60.json'), true);
         foreach ($almumtahanah as $almumtahanah) {
             Ayat::create([
                 'surah_id' => '60',
@@ -876,7 +879,7 @@ class AyatSeeder extends Seeder
 
 
         //Ash Shaff
-        $ashShaff = json_decode(file_get_contents('Ash Shaff.json'), true);
+        $ashShaff = json_decode(file_get_contents('public/alquran/surah/61.json'), true);
         foreach ($ashShaff as $ashShaff) {
             Ayat::create([
                 'surah_id' => '61',
@@ -889,7 +892,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Jumuah
-        $alJumuah = json_decode(file_get_contents('Al Jumuah.json'), true);
+        $alJumuah = json_decode(file_get_contents('public/alquran/surah/62.json'), true);
         foreach ($alJumuah as $alJumuah) {
             Ayat::create([
                 'surah_id' => '62',
@@ -902,7 +905,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Munafiqun
-        $alMunafiqun = json_decode(file_get_contents('Al Munafiqun.json'), true);
+        $alMunafiqun = json_decode(file_get_contents('public/alquran/surah/63.json'), true);
         foreach ($alMunafiqun as $alMunafiqun) {
             Ayat::create([
                 'surah_id' => '63',
@@ -915,7 +918,7 @@ class AyatSeeder extends Seeder
 
 
         // Ath Taghabun
-        $athTaghabun = json_decode(file_get_contents('Ath Taghabun.json'), true);
+        $athTaghabun = json_decode(file_get_contents('public/alquran/surah/64.json'), true);
         foreach ($athTaghabun as $athTaghabun) {
             Ayat::create([
                 'surah_id' => '64',
@@ -927,7 +930,7 @@ class AyatSeeder extends Seeder
         }
 
         //Ath Thalaaq
-        $athThalaaq = json_decode(file_get_contents('Ath Thalaaq.json'), true);
+        $athThalaaq = json_decode(file_get_contents('public/alquran/surah/65.json'), true);
         foreach ($athThalaaq as $athThalaaq) {
             Ayat::create([
                 'surah_id' => '65',
@@ -940,7 +943,7 @@ class AyatSeeder extends Seeder
 
 
         // At Tahriim
-        $atTahriim = json_decode(file_get_contents('At Tahriim.json'), true);
+        $atTahriim = json_decode(file_get_contents('public/alquran/surah/66.json'), true);
         foreach ($atTahriim as $atTahriim) {
             Ayat::create([
                 'surah_id' => '66',
@@ -953,7 +956,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Mulk
-        $alMulk = json_decode(file_get_contents('Al Mulk.json'), true);
+        $alMulk = json_decode(file_get_contents('public/alquran/surah/67.json'), true);
         foreach ($alMulk as $alMulk) {
             Ayat::create([
                 'surah_id' => '67',
@@ -967,7 +970,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Qalam
-        $alQalam = json_decode(file_get_contents('Al Qalam.json'), true);
+        $alQalam = json_decode(file_get_contents('public/alquran/surah/68.json'), true);
         foreach ($alQalam as $alQalam) {
             Ayat::create([
                 'surah_id' => '68',
@@ -981,7 +984,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Haaqqah
-        $alHaaqqah = json_decode(file_get_contents('Al Haaqqah.json'), true);
+        $alHaaqqah = json_decode(file_get_contents('public/alquran/surah/69.json'), true);
         foreach ($alHaaqqah as $alHaaqqah) {
             Ayat::create([
                 'surah_id' => '69',
@@ -995,7 +998,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ma'aarij
-        $alMaaarij = json_decode(file_get_contents('Al Maaarij.json'), true);
+        $alMaaarij = json_decode(file_get_contents('public/alquran/surah/70.json'), true);
         foreach ($alMaaarij as $alMaaarij) {
             Ayat::create([
                 'surah_id' => '70',
@@ -1008,7 +1011,7 @@ class AyatSeeder extends Seeder
 
 
         // Nuh
-        $nuh = json_decode(file_get_contents('Nuh.json'), true);
+        $nuh = json_decode(file_get_contents('public/alquran/surah/71.json'), true);
         foreach ($nuh as $nuh) {
             Ayat::create([
                 'surah_id' => '71',
@@ -1021,7 +1024,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Jin
-        $alJin = json_decode(file_get_contents('Al Jin.json'), true);
+        $alJin = json_decode(file_get_contents('public/alquran/surah/72.json'), true);
         foreach ($alJin as $alJin) {
             Ayat::create([
                 'surah_id' => '72',
@@ -1035,7 +1038,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Muzammil
-        $alMuzammil = json_decode(file_get_contents('Al Muzammil.json'), true);
+        $alMuzammil = json_decode(file_get_contents('public/alquran/surah/73.json'), true);
         foreach ($alMuzammil as $alMuzammil) {
             Ayat::create([
                 'surah_id' => '73',
@@ -1049,7 +1052,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Muddastir
-        $alMuddastir = json_decode(file_get_contents('Al Muddastir.json'), true);
+        $alMuddastir = json_decode(file_get_contents('public/alquran/surah/74.json'), true);
         foreach ($alMuddastir as $alMuddastir) {
             Ayat::create([
                 'surah_id' => '74',
@@ -1063,7 +1066,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Qiyaamah
-        $alQiyaamah = json_decode(file_get_contents('Al Qiyaamah.json'), true);
+        $alQiyaamah = json_decode(file_get_contents('public/alquran/surah/75.json'), true);
         foreach ($alQiyaamah as $alQiyaamah) {
             Ayat::create([
                 'surah_id' => '75',
@@ -1076,7 +1079,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Insaan
-        $alInsaan = json_decode(file_get_contents('Al Insaan.json'), true);
+        $alInsaan = json_decode(file_get_contents('public/alquran/surah/76.json'), true);
         foreach ($alInsaan as $alInsaan) {
             Ayat::create([
                 'surah_id' => '76',
@@ -1089,7 +1092,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Mursalaat
-        $alMursalaat = json_decode(file_get_contents('Al Mursalaat.json'), true);
+        $alMursalaat = json_decode(file_get_contents('public/alquran/surah/77.json'), true);
         foreach ($alMursalaat as $alMursalaat) {
             Ayat::create([
                 'surah_id' => '77',
@@ -1103,7 +1106,7 @@ class AyatSeeder extends Seeder
 
 
         // An Naba
-        $anNaba = json_decode(file_get_contents('An Naba.json'), true);
+        $anNaba = json_decode(file_get_contents('public/alquran/surah/78.json'), true);
         foreach ($anNaba as $anNaba) {
             Ayat::create([
                 'surah_id' => '78',
@@ -1117,7 +1120,7 @@ class AyatSeeder extends Seeder
 
 
         // An Naaziat
-        $anNaaziat = json_decode(file_get_contents('An Naaziat.json'), true);
+        $anNaaziat = json_decode(file_get_contents('public/alquran/surah/79.json'), true);
         foreach ($anNaaziat as $anNaaziat) {
             Ayat::create([
                 'surah_id' => '79',
@@ -1130,7 +1133,7 @@ class AyatSeeder extends Seeder
 
 
         // Abasa
-        $abasa = json_decode(file_get_contents('Abasa.json'), true);
+        $abasa = json_decode(file_get_contents('public/alquran/surah/80.json'), true);
         foreach ($abasa as $abasa) {
             Ayat::create([
                 'surah_id' => '80',
@@ -1143,7 +1146,7 @@ class AyatSeeder extends Seeder
 
 
         // At Takwiir
-        $atTakwiir = json_decode(file_get_contents('At Takwiir.json'), true);
+        $atTakwiir = json_decode(file_get_contents('public/alquran/surah/81.json'), true);
         foreach ($atTakwiir as $atTakwiir) {
             Ayat::create([
                 'surah_id' => '81',
@@ -1157,7 +1160,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Infithar
-        $alInfithar = json_decode(file_get_contents('Al Infithar.json'), true);
+        $alInfithar = json_decode(file_get_contents('public/alquran/surah/82.json'), true);
         foreach ($alInfithar as $alInfithar) {
             Ayat::create([
                 'surah_id' => '82',
@@ -1171,7 +1174,7 @@ class AyatSeeder extends Seeder
 
 
         //Al Muthaffifin
-        $alMuthaffifin = json_decode(file_get_contents('Al Muthaffifin.json'), true);
+        $alMuthaffifin = json_decode(file_get_contents('public/alquran/surah/83.json'), true);
         foreach ($alMuthaffifin as $alMuthaffifin) {
             Ayat::create([
                 'surah_id' => '83',
@@ -1185,7 +1188,7 @@ class AyatSeeder extends Seeder
 
 
         //Al Insyiqaq
-        $alInsyiqaq = json_decode(file_get_contents('Al Insyiqaq.json'), true);
+        $alInsyiqaq = json_decode(file_get_contents('public/alquran/surah/84.json'), true);
         foreach ($alInsyiqaq as $alInsyiqaq) {
             Ayat::create([
                 'surah_id' => '84',
@@ -1199,7 +1202,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Buruuj
-        $alBuruuj = json_decode(file_get_contents('Al Buruuj.json'), true);
+        $alBuruuj = json_decode(file_get_contents('public/alquran/surah/85.json'), true);
         foreach ($alBuruuj as $alBuruuj) {
             Ayat::create([
                 'surah_id' => '85',
@@ -1212,7 +1215,7 @@ class AyatSeeder extends Seeder
 
 
         // Ath Thariq
-        $athThariq = json_decode(file_get_contents('Ath Thariq.json'), true);
+        $athThariq = json_decode(file_get_contents('public/alquran/surah/86.json'), true);
         foreach ($athThariq as $athThariq) {
             Ayat::create([
                 'surah_id' => '86',
@@ -1225,7 +1228,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Alaa
-        $alAlaa = json_decode(file_get_contents('Al Alaa.json'), true);
+        $alAlaa = json_decode(file_get_contents('public/alquran/surah/87.json'), true);
         foreach ($alAlaa as $alAlaa) {
             Ayat::create([
                 'surah_id' => '87',
@@ -1238,7 +1241,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ghaasyiah
-        $alGhaasyiah = json_decode(file_get_contents('Al Ghaasyiah.json'), true);
+        $alGhaasyiah = json_decode(file_get_contents('public/alquran/surah/88.json'), true);
         foreach ($alGhaasyiah as $alGhaasyiah) {
             Ayat::create([
                 'surah_id' => '88',
@@ -1251,7 +1254,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Fajr
-        $alFajr = json_decode(file_get_contents('Al Fajr.json'), true);
+        $alFajr = json_decode(file_get_contents('public/alquran/surah/89.json'), true);
         foreach ($alFajr as $alFajr) {
             Ayat::create([
                 'surah_id' => '89',
@@ -1264,7 +1267,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Balad
-        $alBalad = json_decode(file_get_contents('Al Balad.json'), true);
+        $alBalad = json_decode(file_get_contents('public/alquran/surah/90.json'), true);
         foreach ($alBalad as $alBalad) {
             Ayat::create([
                 'surah_id' => '90',
@@ -1278,7 +1281,7 @@ class AyatSeeder extends Seeder
 
 
         // Asy Syams
-        $asySyams = json_decode(file_get_contents('Asy Syams.json'), true);
+        $asySyams = json_decode(file_get_contents('public/alquran/surah/91.json'), true);
         foreach ($asySyams as $asySyams) {
             Ayat::create([
                 'surah_id' => '91',
@@ -1291,7 +1294,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Lail
-        $alLail = json_decode(file_get_contents('Al Lail.json'), true);
+        $alLail = json_decode(file_get_contents('public/alquran/surah/92.json'), true);
         foreach ($alLail as $alLail) {
             Ayat::create([
                 'surah_id' => '92',
@@ -1304,7 +1307,7 @@ class AyatSeeder extends Seeder
 
 
         // Adh Dhuhaa
-        $adhDhuhaa = json_decode(file_get_contents('Adh Dhuhaa.json'), true);
+        $adhDhuhaa = json_decode(file_get_contents('public/alquran/surah/93.json'), true);
         foreach ($adhDhuhaa as $adhDhuhaa) {
             Ayat::create([
                 'surah_id' => '93',
@@ -1317,7 +1320,7 @@ class AyatSeeder extends Seeder
 
 
         // Asy Syarh
-        $asySyarh = json_decode(file_get_contents('Asy Syarh.json'), true);
+        $asySyarh = json_decode(file_get_contents('public/alquran/surah/94.json'), true);
         foreach ($asySyarh as $asySyarh) {
             Ayat::create([
                 'surah_id' => '94',
@@ -1330,7 +1333,7 @@ class AyatSeeder extends Seeder
 
 
         // At Tiin
-        $atTiin = json_decode(file_get_contents('At Tiin.json'), true);
+        $atTiin = json_decode(file_get_contents('public/alquran/surah/95.json'), true);
         foreach ($atTiin as $atTiin) {
             Ayat::create([
                 'surah_id' => '95',
@@ -1343,7 +1346,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Alaq
-        $alAlaq = json_decode(file_get_contents('Al Alaq.json'), true);
+        $alAlaq = json_decode(file_get_contents('public/alquran/surah/96.json'), true);
         foreach ($alAlaq as $alAlaq) {
             Ayat::create([
                 'surah_id' => '96',
@@ -1356,7 +1359,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Qadr
-        $alQadr = json_decode(file_get_contents('Al Qadr.json'), true);
+        $alQadr = json_decode(file_get_contents('public/alquran/surah/97.json'), true);
         foreach ($alQadr as $alQadr) {
             Ayat::create([
                 'surah_id' => '97',
@@ -1369,7 +1372,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Bayyinah
-        $alBayyinah = json_decode(file_get_contents('Al Bayyinah.json'), true);
+        $alBayyinah = json_decode(file_get_contents('public/alquran/surah/98.json'), true);
         foreach ($alBayyinah as $alBayyinah) {
             Ayat::create([
                 'surah_id' => '98',
@@ -1382,7 +1385,7 @@ class AyatSeeder extends Seeder
 
 
         // Az Zalzalah
-        $azZalzalah = json_decode(file_get_contents('Az Zalzalah.json'), true);
+        $azZalzalah = json_decode(file_get_contents('public/alquran/surah/99.json'), true);
         foreach ($azZalzalah as $azZalzalah) {
             Ayat::create([
                 'surah_id' => '99',
@@ -1394,7 +1397,7 @@ class AyatSeeder extends Seeder
         }
 
         // Al Aadiyah
-        $alAadiyah = json_decode(file_get_contents('Al Aadiyah.json'), true);
+        $alAadiyah = json_decode(file_get_contents('public/alquran/surah/100.json'), true);
         foreach ($alAadiyah as $alAadiyah) {
             Ayat::create([
                 'surah_id' => '100',
@@ -1407,7 +1410,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Qaariah
-        $alQaariah = json_decode(file_get_contents('Al Qaariah.json'), true);
+        $alQaariah = json_decode(file_get_contents('public/alquran/surah/101.json'), true);
         foreach ($alQaariah as $alQaariah) {
             Ayat::create([
                 'surah_id' => '101',
@@ -1420,7 +1423,7 @@ class AyatSeeder extends Seeder
 
 
         //At Takaatsur
-        $atTakaatsur = json_decode(file_get_contents('At Takaatsur.json'), true);
+        $atTakaatsur = json_decode(file_get_contents('public/alquran/surah/102.json'), true);
         foreach ($atTakaatsur as $atTakaatsur) {
             Ayat::create([
                 'surah_id' => '102',
@@ -1433,7 +1436,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ashr
-        $alAshr = json_decode(file_get_contents('Al Ashr.json'), true);
+        $alAshr = json_decode(file_get_contents('public/alquran/surah/103.json'), true);
         foreach ($alAshr as $alAshr) {
             Ayat::create([
                 'surah_id' => '103',
@@ -1446,7 +1449,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Humazah
-        $alHumazah = json_decode(file_get_contents('Al Humazah.json'), true);
+        $alHumazah = json_decode(file_get_contents('public/alquran/surah/104.json'), true);
         foreach ($alHumazah as $alHumazah) {
             Ayat::create([
                 'surah_id' => '104',
@@ -1459,7 +1462,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Fiil
-        $alFiil = json_decode(file_get_contents('Al Fiil.json'), true);
+        $alFiil = json_decode(file_get_contents('public/alquran/surah/105.json'), true);
         foreach ($alFiil as $alFiil) {
             Ayat::create([
                 'surah_id' => '105',
@@ -1472,7 +1475,7 @@ class AyatSeeder extends Seeder
 
 
         // Quraisy
-        $quraisy = json_decode(file_get_contents('Quraisy.json'), true);
+        $quraisy = json_decode(file_get_contents('public/alquran/surah/106.json'), true);
         foreach ($quraisy as $quraisy) {
             Ayat::create([
                 'surah_id' => '106',
@@ -1485,7 +1488,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Maauun
-        $alMaauun = json_decode(file_get_contents('Al Maauun.json'), true);
+        $alMaauun = json_decode(file_get_contents('public/alquran/surah/107.json'), true);
         foreach ($alMaauun as $alMaauun) {
             Ayat::create([
                 'surah_id' => '107',
@@ -1499,7 +1502,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Kautsar
-        $alKautsar = json_decode(file_get_contents('Al Kautsar.json'), true);
+        $alKautsar = json_decode(file_get_contents('public/alquran/surah/108.json'), true);
         foreach ($alKautsar as $alKautsar) {
             Ayat::create([
                 'surah_id' => '108',
@@ -1513,7 +1516,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Kafirun
-        $alKafirun = json_decode(file_get_contents('Al Kafirun.json'), true);
+        $alKafirun = json_decode(file_get_contents('public/alquran/surah/109.json'), true);
         foreach ($alKafirun as $alKafirun) {
             Ayat::create([
                 'surah_id' => '109',
@@ -1526,7 +1529,7 @@ class AyatSeeder extends Seeder
 
         
         // An Nashr
-        $anNashr = json_decode(file_get_contents('An Nashr.json'), true);
+        $anNashr = json_decode(file_get_contents('public/alquran/surah/110.json'), true);
         foreach ($anNashr as $anNashr) {
             Ayat::create([
                 'surah_id' => '110',
@@ -1540,7 +1543,7 @@ class AyatSeeder extends Seeder
 
 
         //Al Lahab
-        $alLahab = json_decode(file_get_contents('Al Lahab.json'), true);
+        $alLahab = json_decode(file_get_contents('public/alquran/surah/111.json'), true);
         foreach ($alLahab as $alLahab) {
             Ayat::create([
                 'surah_id' => '111',
@@ -1553,7 +1556,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Ikhlash
-        $alIkhlash = json_decode(file_get_contents('Al Ikhlash.json'), true);
+        $alIkhlash = json_decode(file_get_contents('public/alquran/surah/112.json'), true);
         foreach ($alIkhlash as $alIkhlash) {
             Ayat::create([
                 'surah_id' => '112',
@@ -1566,7 +1569,7 @@ class AyatSeeder extends Seeder
 
 
         // Al Falaq
-        $alFalaq = json_decode(file_get_contents('Al Aadiyah.json'), true);
+        $alFalaq = json_decode(file_get_contents('public/alquran/surah/113.json'), true);
         foreach ($alFalaq as $alFalaq) {
             Ayat::create([
                 'surah_id' => '113',
@@ -1578,7 +1581,7 @@ class AyatSeeder extends Seeder
         }
 
         // An Naas
-        $anNaas = json_decode(file_get_contents('Al Aadiyah.json'), true);
+        $anNaas = json_decode(file_get_contents('public/alquran/surah/114.json'), true);
         foreach ($anNaas as $anNaas) {
             Ayat::create([
                 'surah_id' => '114',
