@@ -19,7 +19,7 @@ class QuranSeeder extends Seeder
     public function run()
     {
         //
-        $data = json_decode(file_get_contents('data.json'), true);
+        $data = json_decode(file_get_contents('public/alquran/surah/data.json'), true);
         
         foreach ($data as $surahData) {
             $surah = Surah::create([
