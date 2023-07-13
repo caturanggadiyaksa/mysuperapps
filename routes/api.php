@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\QuranController;
-
+use App\Http\Controllers\AuthorizedAppController;
 
 
 
@@ -36,3 +36,5 @@ Route::get('quran/{id}', [QuranController::class, 'show']);
 Route::get('quran/{id}/ayat/{ayatId}', [QuranController::class, 'showAyat']);
 Route::post('surahs', [QuranController::class, 'store']);
 
+
+Route::post('apps/register', [AuthorizedAppController::class, 'register']);
