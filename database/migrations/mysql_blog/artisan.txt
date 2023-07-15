@@ -1,0 +1,8 @@
+//run migration on folder mysql_blog
+php artisan migrate --path=database/migrations/mysql_blog --database=mysql_blog
+
+
+
+
+//untuk membuat migration
+php artisan make:migration create_detail_user_table --table=detail_user --path=database/migrations/mysql_blog
