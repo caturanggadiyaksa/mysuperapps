@@ -13,6 +13,9 @@ class AuthorizedApp extends Model
 {
     // use HasFactory;
 
+    protected $connection = 'mysql';
+
+    
     protected $fillable = [
         'client_id', 'client_secret', 'name', 'redirect_uri',
     ];
