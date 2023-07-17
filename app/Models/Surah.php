@@ -8,6 +8,7 @@ use App\Models\Ayat;
 
 class Surah extends Model
 {
+    protected $connection = 'mysql';
     use HasFactory;
 
     public function ayats()
