@@ -1,8 +1,14 @@
 //run migration on folder mysql_blog
 php artisan migrate --path=database/migrations/mysql_blog --database=mysql_blog
 
-
+//run migration example
+php artisan migrate --path=database/migrations/2023_07_17_004813_authorized_apps.php --database=mysql
 
 
 //untuk membuat migration
 php artisan make:migration create_detail_user_table --table=detail_user --path=database/migrations/mysql_blog
+
+
+
+//run Seeder
+php artisan db:seed --class=BlogSeeder --database=mysql
