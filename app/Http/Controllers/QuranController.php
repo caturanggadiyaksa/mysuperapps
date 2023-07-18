@@ -88,4 +88,15 @@ class QuranController extends Controller
     {
         //
     }
+
+    public function search(Request $request)
+    {
+        $keyword = $request->input('keyword');
+
+        $surah = surah::where('text', 'like', '%' . $keyword . '%')->get();
+
+       
+
+        return response()->json($surah);
+    }
 }
