@@ -21,33 +21,18 @@ Route::middleware('auth:sanctum')->group(function () {
         Route::apiResource('user', UserController::class);
     });
 
-    
-    // Route::get('quran', [QuranController::class, 'index']);
-    // Route::get('quran/{id}', [QuranController::class, 'show']);
-    // Route::get('quran/{id}/ayat/{ayatId}', [QuranController::class, 'showAyat']);
-    // Route::post('surahs', [QuranController::class, 'store']);
-    
-    
+  
 });
 
 
 Route::group(['middleware' => 'verify.api.key'], function () {
     Route::post('/login', [AuthController::class, 'login'])->name('login');
-    // Route::get('quran', [QuranController::class, 'index']);
-    // Route::get('quran/{id}', [QuranController::class, 'show']);
-    // Route::get('quran/{id}/ayat/{ayatId}', [QuranController::class, 'showAyat']);
+    Route::get('quran', [QuranController::class, 'index']);
+    Route::get('quran/{id}', [QuranController::class, 'show']);
+    Route::get('quran/{id}/ayat/{ayatId}', [QuranController::class, 'showAyat']);
     Route::post('surahs', [QuranController::class, 'store']);
-    Route::post('apps/register', [AuthorizedAppController::class, 'register']);
-
+    
 });
-
-Route::get('quran/search', [QuranController::class, 'search']);
-
-// Route::post('/login', [AuthController::class, 'login'])->name('login');
-Route::get('quran', [QuranController::class, 'index']);
-// Route::get('quran/{id}', [QuranController::class, 'show']);
-// Route::get('quran/{id}/ayat/{ayatId}', [QuranController::class, 'showAyat']);
-// Route::post('surahs', [QuranController::class, 'store']);
 
 
 Route::post('apps/register', [AuthorizedAppController::class, 'register']);
