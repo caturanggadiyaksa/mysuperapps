@@ -13,8 +13,12 @@ class CreateTagTable extends Migration
      */
     public function up()
     {
-        Schema::table('tag', function (Blueprint $table) {
-            //
+        Schema::create('tag', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('blog_id');
+            $table->char('name_tag', 100);
+            $table->text('description');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +29,6 @@ class CreateTagTable extends Migration
      */
     public function down()
     {
-        Schema::table('tag', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('tag');
     }
 }
