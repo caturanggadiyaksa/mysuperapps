@@ -6,7 +6,8 @@ use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\AuthController;
 use App\Http\Controllers\QuranController;
 use App\Http\Controllers\AuthorizedAppController;
-
+use App\Http\Controllers\Blog\BlogController;
+use App\Http\Controllers\Blog\UserBlogController;
 
 
 
@@ -36,3 +37,6 @@ Route::group(['middleware' => 'verify.api.key'], function () {
 
 
 Route::post('apps/register', [AuthorizedAppController::class, 'register']);
+
+Route::apiResource('/blog', BlogController::class);
+Route::apiResource('/userblog', UserBlogController::class);
