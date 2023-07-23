@@ -13,8 +13,12 @@ class CreateSosmedTable extends Migration
      */
     public function up()
     {
-        Schema::table('sosmed', function (Blueprint $table) {
-            //
+        Schema::create('sosmed', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('_detail_user_id');
+            $table->char('name_sosmed', 50);
+            $table->text('link_sosmed');
+            $table->timestamps();
         });
     }
 
@@ -25,8 +29,6 @@ class CreateSosmedTable extends Migration
      */
     public function down()
     {
-        Schema::table('sosmed', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('sosmed');
     }
 }
