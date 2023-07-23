@@ -35,8 +35,6 @@ class CreateBlogsTable extends Migration
      */
     public function down()
     {
-        Schema::table('blogs', function (Blueprint $table) {
-            //
-        });
+        Schema::dropIfExists('blogs');
     }
 }
